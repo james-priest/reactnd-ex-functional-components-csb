@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import { profiles, users, movies } from './data.js';
 import PopularMovies from './PopularMovies';
 import MovieCardsList from './MovieCardsList';
 
-function App(props) {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +19,6 @@ function App(props) {
       </main>
     </div>
   );
-}
+};
 
 export default App;

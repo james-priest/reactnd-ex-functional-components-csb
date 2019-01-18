@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-function MovieCard(props) {
+const MovieCard = props => {
   const { users, usersWhoLikedMovie, movieInfo } = props;
   return (
     <div className="PopularMovies-cell" key={movieInfo.id}>
@@ -20,6 +20,6 @@ function MovieCard(props) {
       )}
     </div>
   );
-}
+};
 
 export default MovieCard;

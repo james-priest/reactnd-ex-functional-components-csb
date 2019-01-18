@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MovieCard from './MovieCard';
 
-function MovieCardsList(props) {
+const MovieCardsList = props => {
   const { profiles, users, movies } = props;
   const usersByMovie = {}; // create empty object
 
@@ -40,6 +40,6 @@ function MovieCardsList(props) {
   });
 
   return <div className="PopularMovies-container">{movieCards}</div>;
-}
+};
 
 export default MovieCardsList;

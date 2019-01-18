@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-function UserList(props) {
+const UserList = props => {
   const { movieID, profiles, users } = props;
   const filteredProfiles = profiles.filter(
     profile => Number(profile.favoriteMovieID) === movieID
@@ -21,6 +21,6 @@ function UserList(props) {
       </ul>
     </div>
   );
-}
+};
 
 export default UserList;

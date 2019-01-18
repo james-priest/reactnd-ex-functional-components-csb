@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import UserList from './UserList';
 
-function PopularMovies(props) {
+const PopularMovies = props => {
   const { profiles, users, movies } = props;
   const moviesArr = Object.values(movies);
   return (
@@ -14,6 +14,6 @@ function PopularMovies(props) {
       ))}
     </div>
   );
-}
+};
 
 export default PopularMovies;
