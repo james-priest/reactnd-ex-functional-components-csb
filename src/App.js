@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { profiles, users, movies } from './data.js';
 import PopularMovies from './PopularMovies';
+import MovieCardsList from './MovieCardsList';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <main className="App-main">
           <h2>How Popular is Your Favorite Movie?</h2>
           <PopularMovies profiles={profiles} users={users} movies={movies} />
+          <MovieCardsList profiles={profiles} movies={movies} users={users} />
         </main>
       </div>
     );
