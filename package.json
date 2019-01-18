@@ -1,7 +1,7 @@
 {
-  "name": "exercise-2-passing-data",
+  "name": "exercise-functional-component",
   "version": "1.0.0",
-  "description": "Receives data from three object stores through props to display favorite movie info",
+  "description": "Updates Popular Movies to use Stateless Functional Components",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
