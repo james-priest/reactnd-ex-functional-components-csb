@@ -6,7 +6,7 @@ const MovieCard = props => {
     <div className="PopularMovies-cell" key={movieInfo.id}>
       <h3>{movieInfo.name}</h3>
       {!usersWhoLikedMovie || usersWhoLikedMovie === 0 ? (
-        <p>None of the </p>
+        <p>None of the current users liked this movie</p>
       ) : (
         <div>
           <p>Liked by:</p>
